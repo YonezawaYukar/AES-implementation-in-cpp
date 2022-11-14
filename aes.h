@@ -6,7 +6,6 @@
 #define AES_CRYPT_AES_H
 
 #include "base64.h"
-#include <iostream>
 #include <zlib.h>
 #include <array>
 #include <cmath>
