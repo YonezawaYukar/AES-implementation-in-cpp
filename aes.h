@@ -53,7 +53,7 @@ private:
 
     std::vector<Byte> cipher(std::vector<Byte> input, const std::vector<std::array<Byte, 4> > &keySchedule);
 
-    static static static std::array<Byte, 4> rotWord(std::array<Byte, 4> temp);
+    static  std::array<Byte, 4> rotWord(std::array<Byte, 4> temp);
 
     std::array<Byte, 4> subWord(std::array<Byte, 4> temp);
 
@@ -104,8 +104,8 @@ private:
         return s;
     }
 
-    std::array<Byte, 256> sBox;
-    std::array<std::array<Byte, 4>, 11> rCon;
+    std::array<Byte, 256> sBox{};
+    std::array<std::array<Byte, 4>, 11> rCon{};
 };
 
 #endif //AES_CRYPT_AES_H
